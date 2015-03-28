@@ -1,0 +1,18 @@
+{
+  "name": "customata",
+  "version": "0.0.1",
+  "authors": [
+    "thanh cao"
+  ],
+  "description": "customata libary control",
+  "main": "index.html",
+  "keywords": [
+    "customata",
+    "node",
+    "gulp"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "jQuery": "~2.1.3"
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "name": "customata",
+  "version": "0.0.1",
+  "description": "customata",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "node",
+    "gulp",
+    "backbone"
+  ],
+  "author": "thanhcao",
+  "license": "MIT",
+  "devDependencies": {
+    "gulp-connect": "~2.2.0",
+    "gulp-util": "~3.0.4",
+    "gulp": "~3.8.11",
+    "gulp-concat": "~2.5.2",
+    "gulp-uglify": "~1.1.0"
+  }
+}

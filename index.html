@@ -1,0 +1,50 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+        <form>
+            <div>
+                <input type="text" name="name"/>
+            </div>
+            <div>
+                <input type="radio" name="sex" value="male">Male<br>
+                <input type="radio" name="sex" value="female">Female
+            </div>
+
+            <div>  
+                <select name="language">
+                  <option value="english">English</option>
+                  <option value="vietnamese" selected="selected">Vietnamese</option>
+                  <option value="german">German</option>
+                  <option value="greek">Greek</option>
+                </select>
+            </div>
+
+            <div>
+                <input type="checkbox" name="vehicle" value="bike">I have a bike<br>
+                <input type="checkbox" name="vehicle" value="car">I have a car 
+            </div>
+
+            <div>
+                <button type="submit">Button</button>
+            </div>
+        </form>
+        <script src="libs/jQuery/dist/jquery.min.js"></script>
+        <script>
+            $(function(){
+                $("form").submit(function(e){
+                    e.preventDefault( );
+                    console.log("name :",$("[name='name']").val( ));
+                    console.log("sex :",$("[name='sex']").filter(":checked").val( ));
+                    console.log("language :",$("[name='language']").val( ));
+                    var checklist = $("[name='vehicle']").filter(":checked");
+                    checklist.each(function() {
+                        console.log("vehicle :",$(this).val( ));
+                    });
+
+                });
+            });
+        </script>
+    </body>
+</html>
